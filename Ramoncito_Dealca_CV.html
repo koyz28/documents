@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramoncito S. Dealca - CV</title>
+  <title>Ramoncito S. Dealca - Curriculum Vitae</title>
   <style>
     :root {
-      --primary: #1f3c88;
-      --secondary: #2f5aa8;
-      --text: #222;
-      --muted: #666;
-      --border: #d9e1f2;
-      --bg: #f7f9fc;
+      --navy: #17324d;
+      --blue: #24527a;
+      --accent: #2f80ed;
+      --text: #1f2933;
+      --muted: #5b6770;
+      --line: #d9e2ec;
+      --soft: #f5f7fa;
+      --white: #ffffff;
     }
 
     * {
@@ -20,69 +22,121 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
       color: var(--text);
-      background: #eef3fb;
-      line-height: 1.5;
+      background: #e9eef5;
+      line-height: 1.55;
     }
 
     .page {
-      max-width: 900px;
-      margin: 32px auto;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    }
-
-    .header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #fff;
-      padding: 36px 40px 28px;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 34px;
-      letter-spacing: 1px;
-    }
-
-    .header .role {
-      margin-top: 8px;
-      font-size: 18px;
-      opacity: 0.95;
-    }
-
-    .contact {
-      margin-top: 18px;
+      max-width: 960px;
+      margin: 28px auto;
+      background: var(--white);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px 20px;
+      grid-template-columns: 300px 1fr;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background: var(--navy);
+      color: var(--white);
+      padding: 38px 28px;
+    }
+
+    .main {
+      padding: 40px 42px;
+      background: var(--white);
+    }
+
+    .name {
+      font-size: 34px;
+      line-height: 1.15;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.3px;
+    }
+
+    .headline {
+      margin-top: 10px;
+      font-size: 15px;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      color: #c5d4e3;
+      font-weight: 600;
+    }
+
+    .sidebar-section {
+      margin-top: 34px;
+    }
+
+    .sidebar-section h2,
+    .main-section h2 {
+      margin: 0 0 12px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+      font-weight: 700;
+    }
+
+    .sidebar-section h2 {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 8px;
+    }
+
+    .main-section h2 {
+      color: var(--blue);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 8px;
+    }
+
+    .contact-item,
+    .info-item {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #eef4fb;
+    }
+
+    .contact-item strong,
+    .info-item strong {
+      display: inline-block;
+      min-width: 92px;
+      color: #ffffff;
+    }
+
+    .skills-list,
+    .strengths-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .skills-list li,
+    .strengths-list li {
+      margin-bottom: 10px;
+      padding: 10px 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border-left: 3px solid #7fb3ff;
+      border-radius: 4px;
       font-size: 14px;
     }
 
-    .content {
-      padding: 30px 40px 40px;
-    }
-
-    .section {
+    .summary-box {
+      background: var(--soft);
+      border-left: 4px solid var(--accent);
+      padding: 18px 20px;
+      border-radius: 6px;
+      font-size: 15px;
       margin-bottom: 28px;
     }
 
-    .section h2 {
-      margin: 0 0 12px;
-      font-size: 18px;
-      color: var(--primary);
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .summary {
-      font-size: 15px;
+    .main-section {
+      margin-bottom: 30px;
     }
 
     .job {
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
     .job:last-child {
@@ -94,129 +148,133 @@
       justify-content: space-between;
       gap: 16px;
       flex-wrap: wrap;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .job-title {
-      font-size: 17px;
-      font-weight: bold;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
     }
 
     .job-company {
-      color: var(--secondary);
-      font-weight: bold;
+      font-size: 15px;
+      color: var(--blue);
+      font-weight: 600;
+      margin-top: 2px;
     }
 
     .job-date {
+      font-size: 13px;
       color: var(--muted);
-      font-size: 14px;
       white-space: nowrap;
+      font-weight: 600;
     }
 
-    ul {
+    .job ul {
       margin: 8px 0 0 20px;
       padding: 0;
     }
 
-    li {
-      margin-bottom: 6px;
+    .job li {
+      margin-bottom: 7px;
+      font-size: 14px;
     }
 
-    .education-item,
-    .skills-grid,
-    .details-grid {
-      font-size: 15px;
+    .education-card {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 16px 18px;
+      font-size: 14px;
     }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px 24px;
-    }
-
-    .skill-group {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 12px 14px;
-    }
-
-    .skill-group strong {
-      color: var(--primary);
+    .education-card strong {
       display: block;
-      margin-bottom: 6px;
+      font-size: 16px;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .footer-note {
+      font-size: 14px;
+      color: var(--muted);
     }
 
     @media print {
       body {
-        background: #fff;
+        background: #ffffff;
       }
 
       .page {
         margin: 0;
-        max-width: 100%;
         box-shadow: none;
+        max-width: 100%;
       }
     }
 
-    @media (max-width: 640px) {
-      .header,
-      .content {
-        padding: 24px;
+    @media (max-width: 860px) {
+      .page {
+        grid-template-columns: 1fr;
       }
 
-      .contact,
-      .skills-grid {
-        grid-template-columns: 1fr;
+      .sidebar,
+      .main {
+        padding: 28px 24px;
       }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <header class="header">
-      <h1>Ramoncito S. Dealca</h1>
-      <div class="role">Web Developer</div>
-      <div class="contact">
-        <div><strong>Email:</strong> dealcaram@gmail.com</div>
-        <div><strong>Mobile:</strong> +63 920 754 7090</div>
-        <div><strong>Date of Birth:</strong> January 28, 1996</div>
-        <div><strong>Gender:</strong> Male</div>
-      </div>
-    </header>
+    <aside class="sidebar">
+      <h1 class="name">Ramoncito S. Dealca</h1>
+      <div class="headline">Web Developer</div>
 
-    <main class="content">
-      <section class="section">
-        <h2>Professional Summary</h2>
-        <div class="summary">
-          Adaptable and motivated IT professional with experience in web development, programming, research, and academic instruction. My developer experience is currently focused on <strong>PHP using Laravel</strong>, <strong>HTML</strong>, and <strong>JavaScript / Ajax</strong>, with database experience in both <strong>MySQL</strong> and <strong>MongoDB</strong>. I have contributed to web-based systems, team-based development, and AI-powered solutions across different projects. I am willing to learn new technology stacks, apply modern methods, and continuously improve my skill set to stay competitive in the industry.
-        </div>
+      <section class="sidebar-section">
+        <h2>Contact</h2>
+        <div class="contact-item"><strong>Email:</strong> dealcaram@gmail.com</div>
+        <div class="contact-item"><strong>Mobile:</strong> +63 920 754 7090</div>
       </section>
 
-      <section class="section">
+      <section class="sidebar-section">
+        <h2>Personal Details</h2>
+        <div class="info-item"><strong>Birthday:</strong> January 28, 1996</div>
+        <div class="info-item"><strong>Gender:</strong> Male</div>
+      </section>
+
+      <section class="sidebar-section">
         <h2>Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <strong>Languages & Web</strong>
-            PHP, Laravel, HTML, JavaScript, Ajax
-          </div>
-          <div class="skill-group">
-            <strong>Databases</strong>
-            MySQL, MongoDB
-          </div>
-          <div class="skill-group">
-            <strong>Development Practices</strong>
-            Git Version Control, Sprint / Agile Collaboration, System Maintenance
-          </div>
-          <div class="skill-group">
-            <strong>Other Strengths</strong>
-            AI Integration, Research and Development, Technical Instruction, Continuous Learning
-          </div>
+        <ul class="skills-list">
+          <li><strong>Backend:</strong> PHP, Laravel</li>
+          <li><strong>Frontend:</strong> HTML, JavaScript, Ajax</li>
+          <li><strong>Databases:</strong> MySQL, MongoDB</li>
+          <li><strong>Tools:</strong> Git, Team-based Development</li>
+          <li><strong>Additional:</strong> AI Integration, System Maintenance, Research</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Core Strengths</h2>
+        <ul class="strengths-list">
+          <li>Adaptable and willing to learn new stacks</li>
+          <li>Committed to continuous improvement</li>
+          <li>Experienced in collaborative development</li>
+          <li>Strong mix of technical and instructional experience</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section class="main-section">
+        <h2>Professional Summary</h2>
+        <div class="summary-box">
+          Motivated and adaptable IT professional with hands-on experience in web development, programming, research, and academic instruction. My current development work is focused on PHP using Laravel, HTML, JavaScript / Ajax, and database management using MySQL and MongoDB. I have contributed to web-based systems, collaborative development environments, and AI-powered solutions across different projects. I am eager to learn new technologies, apply better development methods, and continuously strengthen my skills to remain competitive and effective in the industry.
         </div>
       </section>
 
-      <section class="section">
-        <h2>Work Experience</h2>
+      <section class="main-section">
+        <h2>Professional Experience</h2>
 
         <div class="job">
           <div class="job-header">
@@ -227,9 +285,9 @@
             <div class="job-date">November 11, 2025 – Present</div>
           </div>
           <ul>
-            <li>Implemented AI solutions, including both free and paid versions, across different projects.</li>
-            <li>Contributed to web development tasks and project delivery.</li>
-            <li>Supported innovation by integrating modern tools and approaches into development work.</li>
+            <li>Implemented AI solutions across multiple projects using both free and paid tools or services.</li>
+            <li>Contributed to web development tasks, feature delivery, and continuous improvement of project capabilities.</li>
+            <li>Supported the adoption of modern development approaches and practical AI integration in project workflows.</li>
           </ul>
         </div>
 
@@ -242,9 +300,9 @@
             <div class="job-date">January 4, 2025 – December 31, 2025</div>
           </div>
           <ul>
-            <li>Served as Lead Developer and Researcher for assigned projects.</li>
-            <li>Led development initiatives and contributed to technical research and solution planning.</li>
-            <li>Helped design and implement technology-driven improvements.</li>
+            <li>Served as Lead Developer and Researcher for assigned projects and technical initiatives.</li>
+            <li>Led development efforts while contributing to solution planning, analysis, and implementation.</li>
+            <li>Helped design and deliver technology-driven improvements in support of organizational needs.</li>
           </ul>
         </div>
 
@@ -257,9 +315,9 @@
             <div class="job-date">July 1, 2022 – December 31, 2024</div>
           </div>
           <ul>
-            <li>Worked on web development projects as part of the development team.</li>
-            <li>Gained first professional experience using Git for version control.</li>
-            <li>Participated in sprint-based development and collaborative team workflows.</li>
+            <li>Worked on web development projects as part of a collaborative software development team.</li>
+            <li>Built foundational professional experience using Git for version control and teamwork.</li>
+            <li>Participated in sprint-based development processes and team collaboration practices.</li>
           </ul>
         </div>
 
@@ -272,26 +330,26 @@
             <div class="job-date">May 1, 2017 – June 30, 2022</div>
           </div>
           <ul>
-            <li>Taught IT-related subjects at the college level.</li>
+            <li>Taught Information Technology-related subjects at the college level.</li>
             <li>Developed and maintained a Grades Information System for the elementary and high school departments.</li>
-            <li>Supported both academic instruction and school system improvement through technical work.</li>
+            <li>Combined academic instruction with practical system development and maintenance responsibilities.</li>
           </ul>
         </div>
       </section>
 
-      <section class="section">
+      <section class="main-section">
         <h2>Education</h2>
-        <div class="education-item">
-          <strong>Bachelor of Science in Information Technology</strong><br />
+        <div class="education-card">
+          <strong>Bachelor of Science in Information Technology</strong>
           The Lewis College<br />
-          Graduated: 2017
+          Graduated in 2017
         </div>
       </section>
 
-      <section class="section">
-        <h2>Personal Profile</h2>
-        <div class="summary">
-          I am willing to learn new technology stacks, apply new methods, and continuously upgrade my skills to remain effective and competitive in the fast-changing IT industry.
+      <section class="main-section">
+        <h2>Professional Objective</h2>
+        <div class="footer-note">
+          To continue growing as a web developer by applying my current skills in PHP, Laravel, JavaScript, and database management while remaining open to new technologies, modern practices, and opportunities for professional development.
         </div>
       </section>
     </main>
