@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramoncito S. Dealca - CV</title>
+  <style>
+    :root {
+      --primary: #1f3c88;
+      --secondary: #2f5aa8;
+      --text: #222;
+      --muted: #666;
+      --border: #d9e1f2;
+      --bg: #f7f9fc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #eef3fb;
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 32px auto;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 36px 40px 28px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+
+    .header .role {
+      margin-top: 8px;
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    .contact {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 20px;
+      font-size: 14px;
+    }
+
+    .content {
+      padding: 30px 40px 40px;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .summary {
+      font-size: 15px;
+    }
+
+    .job {
+      margin-bottom: 22px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+
+    .job-title {
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .job-company {
+      color: var(--secondary);
+      font-weight: bold;
+    }
+
+    .job-date {
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .education-item,
+    .skills-grid,
+    .details-grid {
+      font-size: 15px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 24px;
+    }
+
+    .skill-group {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+
+    .skill-group strong {
+      color: var(--primary);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        margin: 0;
+        max-width: 100%;
+        box-shadow: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header,
+      .content {
+        padding: 24px;
+      }
+
+      .contact,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>Ramoncito S. Dealca</h1>
+      <div class="role">Web Developer</div>
+      <div class="contact">
+        <div><strong>Email:</strong> dealcaram@gmail.com</div>
+        <div><strong>Mobile:</strong> +63 920 754 7090</div>
+        <div><strong>Date of Birth:</strong> January 28, 1996</div>
+        <div><strong>Gender:</strong> Male</div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section">
+        <h2>Professional Summary</h2>
+        <div class="summary">
+          Adaptable and motivated IT professional with experience in web development, programming, research, and academic instruction. My developer experience is currently focused on <strong>PHP using Laravel</strong>, <strong>HTML</strong>, and <strong>JavaScript / Ajax</strong>, with database experience in both <strong>MySQL</strong> and <strong>MongoDB</strong>. I have contributed to web-based systems, team-based development, and AI-powered solutions across different projects. I am willing to learn new technology stacks, apply modern methods, and continuously improve my skill set to stay competitive in the industry.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <strong>Languages & Web</strong>
+            PHP, Laravel, HTML, JavaScript, Ajax
+          </div>
+          <div class="skill-group">
+            <strong>Databases</strong>
+            MySQL, MongoDB
+          </div>
+          <div class="skill-group">
+            <strong>Development Practices</strong>
+            Git Version Control, Sprint / Agile Collaboration, System Maintenance
+          </div>
+          <div class="skill-group">
+            <strong>Other Strengths</strong>
+            AI Integration, Research and Development, Technical Instruction, Continuous Learning
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Work Experience</h2>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Web Developer</div>
+              <div class="job-company">ThinkBIT Solutions</div>
+            </div>
+            <div class="job-date">November 11, 2025 – Present</div>
+          </div>
+          <ul>
+            <li>Implemented AI solutions, including both free and paid versions, across different projects.</li>
+            <li>Contributed to web development tasks and project delivery.</li>
+            <li>Supported innovation by integrating modern tools and approaches into development work.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Senior Computer Programmer (COS)</div>
+              <div class="job-company">Provincial Government of Sorsogon</div>
+            </div>
+            <div class="job-date">January 4, 2025 – December 31, 2025</div>
+          </div>
+          <ul>
+            <li>Served as Lead Developer and Researcher for assigned projects.</li>
+            <li>Led development initiatives and contributed to technical research and solution planning.</li>
+            <li>Helped design and implement technology-driven improvements.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Junior Web Developer</div>
+              <div class="job-company">HTech Corporation</div>
+            </div>
+            <div class="job-date">July 1, 2022 – December 31, 2024</div>
+          </div>
+          <ul>
+            <li>Worked on web development projects as part of the development team.</li>
+            <li>Gained first professional experience using Git for version control.</li>
+            <li>Participated in sprint-based development and collaborative team workflows.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">College Instructor</div>
+              <div class="job-company">The Lewis College</div>
+            </div>
+            <div class="job-date">May 1, 2017 – June 30, 2022</div>
+          </div>
+          <ul>
+            <li>Taught IT-related subjects at the college level.</li>
+            <li>Developed and maintained a Grades Information System for the elementary and high school departments.</li>
+            <li>Supported both academic instruction and school system improvement through technical work.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+          <strong>Bachelor of Science in Information Technology</strong><br />
+          The Lewis College<br />
+          Graduated: 2017
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Personal Profile</h2>
+        <div class="summary">
+          I am willing to learn new technology stacks, apply new methods, and continuously upgrade my skills to remain effective and competitive in the fast-changing IT industry.
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
