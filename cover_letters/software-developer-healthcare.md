@@ -10,7 +10,7 @@ Yes. I have worked with Angular and Laravel, building user-friendly interfaces o
 **Are you open to reporting face-to-face once or twice a week for client meetings?**
 Yes, I am open to reporting face-to-face once or twice a week for client meetings.
 
-My skills match your requirements: I design modular, maintainable components, write unit tests, document code and APIs, and work closely with data scientists and other teams to connect models to software. I understand the importance of protecting health data and following privacy regulations, and I am eager to deepen my knowledge of healthcare standards, cloud platforms, and big data technologies.
+My skills match your requirements: I design modular, maintainable components, write unit tests, document code and APIs, and work closely with data scientists and other teams to connect models to software. I understand the importance of protecting health data and following privacy regulations, and I have healthcare system experience, including working with HIPAA guidelines and privacy protection measures. I am eager to deepen my knowledge of healthcare data standards, cloud platforms, and big data technologies.
 
 Thank you for your consideration. I would welcome the chance to discuss how I can contribute. You can reach me at dealcaram@gmail.com or +63 920 754 7090.
 
