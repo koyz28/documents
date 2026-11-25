@@ -201,6 +201,14 @@
       color: var(--muted);
     }
 
+    .sidebar-section.first {
+      margin-top: 0;
+    }
+
+    .page + .page {
+      margin-top: 28px;
+    }
+
     @media print {
       body {
         background: #ffffff;
@@ -210,6 +218,16 @@
         margin: 0;
         box-shadow: none;
         max-width: 100%;
+        min-height: 100vh;
+        break-after: page;
+      }
+
+      .page + .page {
+        margin-top: 0;
+      }
+
+      .page:last-of-type {
+        break-after: auto;
       }
     }
 
@@ -244,17 +262,6 @@
       </section>
 
       <section class="sidebar-section">
-        <h2>Technical Skills</h2>
-        <ul class="skills-list">
-          <li><strong>Backend:</strong> PHP, Laravel, Python Django</li>
-          <li><strong>Frontend:</strong> HTML, JavaScript, Ajax, Angular</li>
-          <li><strong>Databases:</strong> MySQL, MongoDB</li>
-          <li><strong>Tools:</strong> Git, Team-based Development, PHPStorm, JetBrains</li>
-          <li><strong>Additional:</strong> AI Integration, System Maintenance, Research, Test Driven Development</li>
-        </ul>
-      </section>
-
-      <section class="sidebar-section">
         <h2>Core Strengths</h2>
         <ul class="strengths-list">
           <li>Adaptable and willing to learn new stacks</li>
@@ -281,6 +288,40 @@
         </div>
       </section>
 
+      <section class="main-section">
+        <h2>Education</h2>
+        <div class="education-card">
+          <strong>Bachelor of Science in Information Technology</strong>
+          The Lewis College<br />
+          Graduated in 2017
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h2>Professional Objective</h2>
+        <div class="footer-note">
+          I know my experience and knowledge will be of great use to the position of PHP Web Developer. The qualifications and requirements needed are fully matched with my career as a web developer. I started with PHP, HTML, JavaScript, and MySQL. From there, with the help of senior developers, I was able to add more to my skills such as Git, Laravel, YAML, MongoDB, and JIRA. Aside from learning more of the tech stack, I have also become accustomed to agile methodology and working as a team, and I have improved my problem solving, not just on the code side but on the business flow as well.<br /><br />
+          I have been working from home for more than 2 years, so I understand that being accountable for my output is important: making sure that deliverables are on time, clean, and working. If given the opportunity, I will give it my all to contribute to the company and further improve myself.
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="page">
+    <aside class="sidebar">
+      <section class="sidebar-section first">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+          <li><strong>Backend:</strong> PHP, Laravel, Python Django</li>
+          <li><strong>Frontend:</strong> HTML, JavaScript, Ajax, Angular</li>
+          <li><strong>Databases:</strong> MySQL, MongoDB</li>
+          <li><strong>Tools:</strong> Git, Team-based Development, PHPStorm, JetBrains</li>
+          <li><strong>Additional:</strong> AI Integration, System Maintenance, Research, Test Driven Development</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="main">
       <section class="main-section">
         <h2>Professional Experience</h2>
 
@@ -357,23 +398,6 @@
             <li>Developed and maintained a Grades Information System for the elementary and high school departments.</li>
             <li>Combined academic instruction with practical system development and maintenance responsibilities.</li>
           </ul>
-        </div>
-      </section>
-
-      <section class="main-section">
-        <h2>Education</h2>
-        <div class="education-card">
-          <strong>Bachelor of Science in Information Technology</strong>
-          The Lewis College<br />
-          Graduated in 2017
-        </div>
-      </section>
-
-      <section class="main-section">
-        <h2>Professional Objective</h2>
-        <div class="footer-note">
-          I know my experience and knowledge will be of great use to the position of PHP Web Developer. The qualifications and requirements needed are fully matched with my career as a web developer. I started with PHP, HTML, JavaScript, and MySQL. From there, with the help of senior developers, I was able to add more to my skills such as Git, Laravel, YAML, MongoDB, and JIRA. Aside from learning more of the tech stack, I have also become accustomed to agile methodology and working as a team, and I have improved my problem solving, not just on the code side but on the business flow as well.<br /><br />
-          I have been working from home for more than 2 years, so I understand that being accountable for my output is important: making sure that deliverables are on time, clean, and working. If given the opportunity, I will give it my all to contribute to the company and further improve myself.
         </div>
       </section>
     </main>
